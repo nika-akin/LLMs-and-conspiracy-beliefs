@@ -20,6 +20,7 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 
 ## Resources -- Prompting LLMs
 
+ - Götz, F. M., Maertens, R., Loomba, S., & van der Linden, S. (2023). Let the algorithm speak: How to use neural networks for automatic item generation in psychological scale development. Psychological Methods. Advance online publication. [osf](https://psyarxiv.com/m6s28/)
  - Horton, J. J. (2023). Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?. arXiv preprint arXiv:2301.07543.
  - Jakesch, M., Hancock, J. T., & Naaman, M. (2023). Human heuristics for AI-generated language are flawed. Proceedings of the National Academy of Sciences, *120*(11), e2208839120. [https://doi.org/10.1073/pnas.2208839120](https://osf.io/284yv/)
  - Levy, S., Saxon, M., & Wang, W. Y. (2021). Investigating memorization of conspiracy theories in text generation. arXiv preprint [arXiv:2101.00379.](https://arxiv.org/abs/2101.00379)
