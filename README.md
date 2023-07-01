@@ -27,6 +27,6 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
  - Zhou, Y., Muresanu, A. I., Han, Z., Paster, K., Pitis, S., Chan, H., & Ba, J. (2023). Large Language Models Are Human-Level Prompt Engineers (arXiv:2211.01910). arXiv. [https://doi.org/10.48550/arXiv.2211.01910](https://arxiv.org/abs/2211.01910)
 
 ## Resources -- NLP
-- Introduction to [Transformer-based Language Models]: (https://github.com/chkla/Transformers-MZES)
+- Introduction to [Transformer-based Language Models](https://github.com/chkla/Transformers-MZES)
 - General [computational social science resources](https://github.com/gesiscss/css_methods_python)
 
