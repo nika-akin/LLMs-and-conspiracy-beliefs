@@ -31,4 +31,5 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 ## Resources -- NLP
 - Introduction to [Transformer-based Language Models](https://github.com/chkla/Transformers-MZES)
 - General [computational social science resources](https://github.com/gesiscss/css_methods_python)
+- [Media Research tool collection](https://docs.google.com/spreadsheets/d/1GHh7rw1XQqla9xvXg9hTNm67TGmeOXTu_Og_thIO8QI/edit#gid=1084385301)
 
