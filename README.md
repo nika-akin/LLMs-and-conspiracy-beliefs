@@ -3,7 +3,7 @@
 
 This repository is a collaborative effort, as part of the [BIGSSS 2023 summmer school](https://bigssscss.janlo.de/democratic-debate-2023-bremen/projects/). This project deals with: *"Simulating Conspiracy Beliefs with Large Language Models"*.
 
-The use of large language models, such as OpenAI’s GPT-3, which are trained on vast amounts of text data, has brought about a significant paradigm shift in the scientific community, as they can produce consistent response distributions, such as moral values or decision-making heuristics (see Horton, 2023). The research project’s two main objectives relate to: leveraging large language models for annotation of conspiracy features and prompt sensitivity.
+The use of large language models, such as OpenAI’s GPT-3, which are trained on vast amounts of text data, has brought about a significant paradigm shift in the scientific community, as they can produce consistent response distributions, such as moral values or decision-making heuristics (see Horton, 2023). The research project’s two main objectives are understanding the propensity of pre-trained generative language models to produce conspiracy content and the sensitivity to prompt design. Further, we compare human data to AI-generated text.
 
 
 ## Project Phase
