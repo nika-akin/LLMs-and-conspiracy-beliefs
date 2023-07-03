@@ -21,12 +21,7 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 ## Data
 [Voat.co News Aggregator](https://zenodo.org/record/5841668)
 
-@inproceedings{mekacher2022can,
-  title={"I Can't Keep It Up." A Dataset from the Defunct Voat.co News Aggregator},
-  author={Mekacher, Amin and Papasavva, Antonis},
-  booktitle={16th International Conference on Web and Social Media},
-  year={2022}
-}
+Mekacher, A., & Papasavva, A. (2022, May). " I Can’t Keep It Up." A Dataset from the Defunct Voat. co News Aggregator. In Proceedings of the International AAAI Conference on Web and Social Media (Vol. 16, pp. 1302-1311).
 
 ## Resources -- Prompting LLMs
 
