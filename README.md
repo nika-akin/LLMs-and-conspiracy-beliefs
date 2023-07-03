@@ -18,6 +18,16 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 | 11-07 |  🕥09:30-12:00, 13:30-15:00, 16:30-17:30 | xx
 | 12-07   | 🕥09:00-12:00 | final presentation
 
+## Data
+[Voat.co News Aggregator](https://zenodo.org/record/5841668)
+
+@inproceedings{mekacher2022can,
+  title={"I Can't Keep It Up." A Dataset from the Defunct Voat.co News Aggregator},
+  author={Mekacher, Amin and Papasavva, Antonis},
+  booktitle={16th International Conference on Web and Social Media},
+  year={2022}
+}
+
 ## Resources -- Prompting LLMs
 
  - Götz, F. M., Maertens, R., Loomba, S., & van der Linden, S. (2023). Let the algorithm speak: How to use neural networks for automatic item generation in psychological scale development. *Psychological Methods*. Advance online publication. [osf](https://psyarxiv.com/m6s28/)
