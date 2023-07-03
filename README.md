@@ -10,7 +10,7 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 
 | Date      | Duration |Milestone|
 | --------------- | ---- | ----------- |
-| 04-07 | 🕥14:00-15:30 | xx
+| 04-07 | 🕥14:00-15:30 | kick-off
 | 05-07   |  🕥14:00-15:30 | xx
 | 06-07     |  🕥14:00-15:30 | xx
 | 07-07   |  🕥13:00-14:30 | xx 
