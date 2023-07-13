@@ -10,7 +10,7 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 ## Data
 [Language of conspiracy (LOCO) corpus](https://pubmed.ncbi.nlm.nih.gov/34697754/)
 
-Miani, A., Hills, T., & Bangerter, A. (2021). LOCO: The 88-million-word language of conspiracy corpus. Behavior research methods, 1-24.
+Miani, A., Hills, T., & Bangerter, A. (2021). LOCO: The 88-million-word language of conspiracy corpus. *Behavior research methods*, 1-24.
 
 ## Resources -- Prompting LLMs
 
