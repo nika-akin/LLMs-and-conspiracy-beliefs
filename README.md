@@ -3,25 +3,14 @@
 
 This repository is a collaborative effort, as part of the [BIGSSS 2023 summmer school](https://bigssscss.janlo.de/democratic-debate-2023-bremen/projects/). This project deals with: *"Simulating Conspiracy Beliefs with Large Language Models"*.
 
-The use of large language models, such as OpenAI’s GPT-3, which are trained on vast amounts of text data, has brought about a significant paradigm shift in the scientific community, as they can produce consistent response distributions, such as moral values or decision-making heuristics (see Horton, 2023). The research project’s two main objectives are understanding the propensity of pre-trained generative language models to produce conspiracy content and the sensitivity to prompt design. Further, we compare human data to AI-generated text.
+The use of large language models, such as OpenAI’s GPT-3, which are trained on vast amounts of text data, has brought about a significant paradigm shift in the scientific community, as they can produce consistent response distributions, such as moral values or decision-making heuristics (see Horton, 2023). The research project’s two main objectives are differentiationg conspiracy from mainstream content by annotating conspiracy theories with GPT-3.5 based on five minimally sufficient features and understanding engagement (i.e., facebook reactions) with conspiratorial content.
 
 
-## Project Phase
-
-| Date      | Duration |Milestone|
-| --------------- | ---- | ----------- |
-| 04-07 | 🕥13:30-16:00 | kick-off
-| 05-07   |  🕥13:30-16:00 | xx
-| 06-07     |  🕥13:30-16:00 | xx
-| 07-07   |  🕥13:00-14:30 | xx 
-| 10-07 |  🕥09:30-12:00, 13:30-15:00, 16:30-17:30 | xx
-| 11-07 |  🕥09:30-12:00, 13:30-15:00, 16:30-17:30 | xx
-| 12-07   | 🕥09:00-12:00 | final presentation
 
 ## Data
-[Voat.co News Aggregator](https://zenodo.org/record/5841668)
+[Language of conspiracy (LOCO) corpus](https://pubmed.ncbi.nlm.nih.gov/34697754/)
 
-Mekacher, A., & Papasavva, A. (2022, May). " I Can’t Keep It Up." A Dataset from the Defunct Voat. co News Aggregator. In Proceedings of the International AAAI Conference on Web and Social Media (Vol. 16, pp. 1302-1311).
+Miani, A., Hills, T., & Bangerter, A. (2021). LOCO: The 88-million-word language of conspiracy corpus. Behavior research methods, 1-24.
 
 ## Resources -- Prompting LLMs
 
