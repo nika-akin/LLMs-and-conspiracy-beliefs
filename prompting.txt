@@ -1,0 +1,79 @@
+annotate_data = {
+    "name": "annotate_data",
+    "description": "annotate some comment level features",
+    "parameters": {
+        "type": "object",
+            "properties": {
+                "Actor": {
+                    "type": "boolean",
+                    "description": f'''An actor can be a single individual, a powerful group, institution, or collective (e.g., governmental agencies, international organizations). Mark all relevant text passages as an Actor if an agent is explicitly named or indirectly mentioned (e.g., they) who is framed as responsible for a threat or actions with malicious intent. Return 'true' if an agent is explicitly named or indirectly mentioned and is framed as responsible for a threat or actions with malicious intent.''',
+                },
+                "Actor_span": {
+                    "type": "string",
+                    "description": f'''Return the relevant text span that contain the actor or not. If necessary use the same text parts to mark different features.''',
+                },
+                "Action": {
+                    "type": "boolean",
+                    "description": f'''Return 'true' if the article includes powerful actors or powerful individuals purposefully and intentionally pursue malicious motives and schemes, which contribute to an agenda or reward. E.g., exertions of influence and purposeful omissions of acts.''',
+                },
+                "Action_span": {
+                    "type": "string",
+                    "description": f'''Return the relevant text span that contains the action or not. ''',
+                },
+                "Threat": {
+                    "type": "boolean",
+                    "description": f'''Return 'true' if the passage is a (possible) negative consequence of an actors’ action. A threat can be one or multiple events that have already occurred, but also possible outcomes in the future. A threat can entail a criminal event, undermining individual actions, or causing systemic harm.''',
+                },
+                "Threat_span": {
+                    "type": "string",
+                    "description": f'''Return the relevant text span that contains the threat or not. ''',}
+                ,
+                "Pattern": {
+                    "type": "boolean",
+                    "description": f'''A pattern is about the observations the individual makes, who wrote or posted the comment. Return 'true' if the author of the comment connects events or specific observations to an integrated whole by attributing cause and effect, questions, events, or coincidences. Pattern can be non-obvious connections between events and people, alleged evidence, expressions of scepticism.''',
+                },
+                "Pattern_span": {
+                    "type": "string",
+                    "description": f'''Return the relevant text span that contains a pattern or not. ''',
+                },
+                "Secrecy": {
+                    "type": "boolean",
+                    "description": f'''Secrecy occurs when an actor makes covert actions or tries to cover them up and divert public attention. Return 'true' if the text conveys missing information or shows the intentions of the actor to mislead the public. Secrecy can be implied by being obvious attempts to mislead. Secrecy supports the speaker's explanation of why something is a conspiracy and not a mainstream theory. Secrecy may be actions that are not hidden, but are widely misinterpreted or rejected by the public.''',
+                },
+                "Secrecy_span": {
+                    "type": "string",
+                    "description": f'''Return the relevant text span that contains secrecy or not''',
+                },
+                "overall_ct": {
+                    "type": "boolean",
+                    "description": f'''Return 'true' if the passage overall is a conspiracy theory.''',
+                },
+            
+            },
+             
+        "required": ["Actor", "Actor_span","Action", "Action_span","Threat", "Threat_span","Pattern", "Pattern_span","Secrecy", "Secrecy_span", "overall_ct"]
+
+
+# Define the retrying strategy
+@retry(
+    wait=wait_random_exponential(multiplier=1, max=60),  # Randomized exponential backoff
+    stop=stop_after_attempt(6)  # Retry 5 times
+)
+def analyze_ct(body):
+  
+
+  response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo-0613",
+        functions=[annotate_data],
+        n=1,
+        temperature=0.01,
+        timeout = 2500,
+        messages=[
+                {"role": "system", "content": "You are a helpful research assistant that codes text data following instructions."},
+                 {"role": "user", "content": f'Whenever the same text passage indicates multiple different features use the same text parts to mark different feature. Please code the following variables for the following article: {body}'},])
+
+  entities = response.choices[0]['message']['function_call']['arguments']
+  return entities
+
+    }
+}
