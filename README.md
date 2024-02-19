@@ -1,5 +1,5 @@
 
-# Conspiracy beliefs and Pre-trained Generative Language Models
+# Conspiracy Narratives on Voat: A Longitudinal Analysis of Cognitive Activation and Evolutionary Psychology Features
 
 This repository is a collaborative effort, as part of the [BIGSSS 2023 summmer school](https://bigssscss.janlo.de/democratic-debate-2023-bremen/projects/). This project deals with: *"Simulating Conspiracy Beliefs with Large Language Models"*.
 
@@ -12,8 +12,7 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 
 <!--Miani, A., Hills, T., & Bangerter, A. (2021). LOCO: The 88-million-word language of conspiracy corpus. *Behavior research methods*, 1-24.-->
 
-## Resources -- Prompting LLMs
-
+<!--## Resources -- Prompting LLMs
 <!-- - Götz, F. M., Maertens, R., Loomba, S., & van der Linden, S. (2023). Let the algorithm speak: How to use neural networks for automatic item generation in psychological scale development. *Psychological Methods*. Advance online publication. [osf](https://psyarxiv.com/m6s28/)
 <!-- - Horton, J. J. (2023). Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?. arXiv preprint arXiv:2301.07543.
 <!-- - Jakesch, M., Hancock, J. T., & Naaman, M. (2023). Human heuristics for AI-generated language are flawed. Proceedings of the National Academy of Sciences, *120*(11), e2208839120. [https://doi.org/10.1073/pnas.2208839120](https://osf.io/284yv/)
@@ -23,8 +22,6 @@ The use of large language models, such as OpenAI’s GPT-3, which are trained on
 <!-- - Madaan, A., Tandon, N., Gupta, P., Hallinan, S., Gao, L., Wiegreffe, S., ... & Clark, P. (2023). Self-refine: Iterative refinement with self-feedback. arXiv preprint [arXiv:2303.17651.](https://selfrefine.info/)
 <!--- Peng, B., Li, C., He, P., Galley, M., & Gao, J. (2023). Instruction Tuning with GPT-4 (arXiv:2304.03277). arXiv. [http://arxiv.org/abs/2304.03277](https://arxiv.org/abs/2304.03277)
 <!-- - Zhou, Y., Muresanu, A. I., Han, Z., Paster, K., Pitis, S., Chan, H., & Ba, J. (2023). Large Language Models Are Human-Level Prompt Engineers (arXiv:2211.01910). arXiv. [https://doi.org/10.48550/arXiv.2211.01910](https://arxiv.org/abs/2211.01910)
-
-
 ## Resources -- NLP
 <!--- Introduction to [Transformer-based Language Models](https://github.com/chkla/Transformers-MZES)-->
 <!--- General [computational social science resources](https://github.com/gesiscss/css_methods_python)-->
