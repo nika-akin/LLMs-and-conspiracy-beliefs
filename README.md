@@ -1,13 +1,44 @@
 
-# Conspiracy Narratives on Voat: A Longitudinal Analysis of Cognitive Activation and Evolutionary Psychology Features
+## Conspiracy Narratives on Voat: A Longitudinal Analysis of Cognitive Activation and Evolutionary Psychology Features
 
-This repository is a collaborative effort, as part of the [BIGSSS 2023 summmer school](https://bigssscss.janlo.de/democratic-debate-2023-bremen/projects/). This project deals with: *"Simulating Conspiracy Beliefs with Large Language Models"*.
+This repository contains an annotated Voat.co dataset and a script for prompting GPT-3.5-turbo related to establishing minimal sufficienct features for conspiracy narratives from evolutionary psychology.
+Binary features for each posting/comment are:
 
-The use of large language models, such as OpenAI’s GPT-3, which are trained on vast amounts of text data, has brought about a significant paradigm shift in the scientific community, as they can produce consistent response distributions, such as moral values or decision-making heuristics (see Horton, 2023). The research project’s two main objectives are differentiationg conspiracy from mainstream content by annotating conspiracy theories with GPT-3.5 based on five minimally sufficient features and understanding engagement (i.e., facebook reactions) with conspiratorial content.
+`Secrecy`
+`Pattern`
+`Action`
+`Actor`
+`Threat`
+
+The corresponding text spans are:
+`Secrecy_span`
+`Pattern_span`
+`Action_span`
+`Actor_span`
+`Threat_span`
+
+Further, `overall_ct` was annotated to to assess the conspiracy status irrespective of the five features.
+
+### Dataset
+
+The dataset is based on Voat.co a deplatformed online platform that resembles in structur Reddit and was known to host deplatformed Sub-Reddits (Mekacher & Papasavva, 2022). The dataset (_N_ = 3,384) is a  span-level multi-label conspiracy dataset [voat_annotation.csv]. It consists of postings and comments between 2014-06-20 and 2020-12-23 that each have been annotated on a text span level for the presence of five minimal sufficient evolutionary psychology features. The present subset builds on a dataset that has been originally collected by: 
+
+Mekacher, A., & Papasavva, A. (2022, May). " I Can’t Keep It Up." A Dataset from the Defunct Voat. co News Aggregator. In _Proceedings of the International AAAI Conference on Web and Social Media_ (Vol. 16, pp. 1302-1311). https://doi.org/10.5281/zenodo.5841668
+
+Different subverses have been sampled for this dataset, namely:
+
+- `/v/anon`, `/v/Conspiracy`, `/v/GreatAwakening`, `/v/pizzagate`, `/v/theredpill` ( each _n_ = 1,880)
+- `/v/gaming`, `/v/news`, `/v/Science`, `/v/Showerthoughts` (each _n_ = 1,504)
+
+
+You can find the dataset file in the `data/` directory.
+
+### Prompting Script
+
+The `prompting_script.txt` file in this repository provides a script for generating prompts for GPT-3 and the underlying annotation logic to discern the five features from each other.
 
 
 
-## Data
 <!--[Language of conspiracy (LOCO) corpus](https://pubmed.ncbi.nlm.nih.gov/34697754/)-->
 
 <!--Miani, A., Hills, T., & Bangerter, A. (2021). LOCO: The 88-million-word language of conspiracy corpus. *Behavior research methods*, 1-24.-->
